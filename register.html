@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Fit N Fine!</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./style/global-style.css">
+    <link rel="stylesheet" href="./style/register-style.css">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div id="social-media-links">
+                <a href="https://www.facebook.com/LPUUniversity/" target="_blank">
+                    <i title="FitNFine Facebook Page" class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/lpuuniversity/" target="_blank">
+                    <i title="FitNFine Instagram Page" class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div id="mobile-nav-toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-nav" class="hidden">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trainings.html">Trainings</a></li>
+                    <li><a href="timetable.html">Timetable</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div id="logo-and-nav">
+                <div id="logo" title="FitNFine">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="FitNFine! Logo">
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <div id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="trainings.html">Trainings</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile header bg -->
+    <div class="hidden" id="header-black-trans"></div>
+
+    <!-- Content -->
+    <div id="register-content">
+        <h1>Register</h1>
+        <div id="reg-wrapper">
+            <div id="textual">
+                <h2>You've made a great choice!</h2>
+                <p>Fill this form, and one of our representatives will contact you shortly.</p>
+            </div>
+            <div id="register-form">
+                <form action="register.html" method="get">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+
+                    <label for="weight">Weight</label>
+                    <input type="number" name="weight" id="weight" placeholder="Enter your weight" required>
+
+                    <label for="height">Height</label>
+                    <input type="number" name="height" id="height" placeholder="Enter your height" required>
+
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" placeholder="Enter your age" required>
+
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="thank-you">
+        <h1>Thank You!</h1>
+        <p>One of our representatives will contact you shortly.</p>
+    </div>
+
+    <footer>
+        <div id="copyright">
+            <p>© <span id="thisYear"></span> FitNFine. All Rights Reserved With Anirban Roy And Diksha Sharma.
+            </p>
+        </div>
+    </footer>
+    <div class="hidden" id="mobile-nav-overlay"></div>
+    <script src="./script/global-script.js"></script>
+    <script src="./script/register-script.js"></script>
+</body>
+
+</html>

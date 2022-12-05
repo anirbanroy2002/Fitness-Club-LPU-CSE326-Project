@@ -1,0 +1,40 @@
+#timetable{
+    color: white;
+    text-align: center;
+}
+h2,h1{
+    background: linear-gradient(0deg, rgba(253, 29, 29, 1) 33%, rgba(252, 176, 69, 1) 65%);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+h1{
+    text-align: left;
+    font-size: 50px;
+}
+h2{
+    font-size: 35px;
+}
+.training-time{
+    display:block;
+}
+#trainings-time-table{
+    overflow-x: auto;
+    margin: auto;
+}
+thead{
+    background-color: rgb(38, 36, 35);
+}
+tbody{
+    background: linear-gradient(134deg, rgba(253, 29, 29, 1) 33%, rgba(252, 176, 69, 1) 65%);
+}
+#trainings-time-table  td{
+    padding: 15px;
+}
+#trainings-time-table  th{
+    padding: 15px;
+}
+#table-wrap{
+    overflow-x: auto;
+}

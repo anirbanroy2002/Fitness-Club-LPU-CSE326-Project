@@ -1,0 +1,103 @@
+#about-us-content {
+    color: white;
+    text-align: center;
+}
+
+h2,
+h1 {
+    background: linear-gradient(0deg, rgba(253, 29, 29, 1) 33%, rgba(252, 176, 69, 1) 65%);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+
+h1 {
+    text-align: left;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.journey-timeline-item {
+    position: relative;
+    margin: 0 0 60px;
+    padding: 0 0 0 60px;
+}
+
+.journey-timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #f2f2f2;
+}
+
+.journey-timeline-item-content {
+    position: relative;
+    padding: 20px 30px;
+    background: #f2f2f2;
+    border-radius: 6px;
+}
+
+.journey-timeline-item-year {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: white;
+    background: radial-gradient(rgba(253, 29, 29, 1), rgba(252, 176, 69, 1));
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.journey-timeline-item-title {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.journey-timeline-item-text {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.team-member-image>img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.team-member-info h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.team-member-info p {
+    font-size: 18px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 933px) {
+    .team-member {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member-image>img {
+        margin-right: 0;
+    }
+}

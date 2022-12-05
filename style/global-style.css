@@ -1,0 +1,243 @@
+@import url("../icons/font-awesome/css/font-awesome.min.css");
+
+:root {
+    --logo-height: 150px;
+}
+
+/* COMMON CSS START */
+* {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    display: none;
+}
+
+#mobile-nav-toggle {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+    margin: 50px;
+}
+
+a {
+    color: white;
+}
+
+#fitnfine>span:nth-child(odd) {
+    font-size: 200%;
+
+    background: linear-gradient(29deg, rgba(253, 29, 29, 1) 33%, rgba(252, 176, 69, 1) 65%);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* COMMON CSS END */
+
+/* HEADER CSS START */
+header {
+    margin: auto;
+}
+
+#logo img {
+    height: var(--logo-height);
+    padding: 10px;
+}
+
+#nav {
+    line-height: var(--logo-height);
+}
+
+#nav>ul>li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 25px;
+}
+
+#nav>ul>li>a {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+#social-media-links {
+    position: fixed;
+    left: 95%;
+    top: 30px;
+    z-index: 99;
+}
+
+#social-media-links>a>i {
+    font-size: 30px;
+}
+
+#social-media-links>a:nth-child(1)>i {
+    color: #39569c;
+}
+
+#social-media-links>a:nth-child(2)>i {
+    color: #e1306c;
+}
+
+#logo-and-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER CSS END */
+
+
+/*COPYRIGHT*/
+#copyright {
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}
+
+/** BEHAVIOURAL CHANGES START **/
+#nav>ul>li>a:hover {
+    font-size: 150%;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    background: linear-gradient(150deg, rgba(253, 29, 29, 1) 33%, rgba(252, 176, 69, 1) 65%);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+/** BEHAVIOURAL CHANGES END **/
+
+
+
+
+
+
+
+/** MOBILE DEVICES START **/
+@media only screen and (max-width: 933px) {
+
+    #social-media-links {
+        left: 83%;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #mobile-nav-toggle {
+        display: block;
+    }
+
+    body {
+        margin: 15px;
+    }
+
+    #logo {
+        margin: auto;
+    }
+
+    #mobile-nav-toggle>i {
+        color: white;
+    }
+
+    #mobile-nav {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 12;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #mobile-nav>ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        list-style-type: none;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+
+    #mobile-nav>ul>li {
+        padding: 10px;
+    }
+
+    #mobile-nav>ul>li>a {
+        color: white;
+    }
+
+    #mobile-nav-toggle>i {
+        color: white;
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        font-size: 30px;
+        z-index: 99;
+    }
+
+    #mobile-nav-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background-image: url(../images/highlight.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #header-black-trans {
+        position: sticky;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 70px;
+        z-index: 95;
+    }
+}
+
+
+
+
+/** MOBILE DEVICES END **/
+
+
+
+/* ANIMATIONS */
+
+
+#logo img {
+    animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        filter: drop-shadow(0px 0px 5px rgb(253, 89, 29));
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 15px rgb(253, 89, 29));
+    }
+}
