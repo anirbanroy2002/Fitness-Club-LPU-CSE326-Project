@@ -2,6 +2,7 @@
 let mobileMenuToggle = document.querySelector("#mobile-nav-toggle > i");
 mobileMenuToggle.addEventListener("click", function ()
 {
+    window.scroll(0, 0);
     document.getElementById("mobile-nav").classList.toggle("hidden");
     document.getElementById("mobile-nav-overlay").classList.toggle("hidden");
     if (mobileMenuToggle.classList.contains("fa-bars"))
@@ -23,7 +24,7 @@ let header = document.getElementById("header");
 let headerHeight = parseInt(window.getComputedStyle(header).height);
 window.addEventListener("scroll", function ()
 {
-    if (window.innerWidth <= 850 && window.scrollY >= headerHeight)
+    if (window.innerWidth <= 934 && window.scrollY >= headerHeight)
     {
         document.getElementById("header-black-trans").classList.remove("hidden");
     }
