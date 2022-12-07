@@ -24,7 +24,8 @@ let revolverCarouselHeading = document.querySelector("#rev-inner-textual > h3");
 let latestEventsCar = document.getElementById("latest-events-carousel");
 let revolverCarouselData = [
     {
-        media: "./videos/run.mp4",
+        //local video updated to google drive link
+        media: "https://drive.google.com/uc?export=download&id=1tIsL8GEiJhNvMHUS_UCxgHg1bwStRm6t",
         type: "video",
         heading: "Cardio Marathon",
         text: "Last month, we conducted a cardio marathon for our members. We had a great turnout and everyone had a blast. We hope to do this again soon!"
@@ -36,7 +37,8 @@ let revolverCarouselData = [
         text: "We conduct periodic cycling events for our members. It's a great way to stay fit and have fun at the same time."
     },
     {
-        media: "./videos/senior.mp4",
+        //local video updated to google drive link
+        media: "https://drive.google.com/uc?export=download&id=17CIyA0RR9t1EXaXyJAEWWwLtAcVAIBTF",
         type: "video",
         heading: "Senior Citizen Special Events",
         text: "We conduct special events for our senior citizens. We have a lot of fun and it's a great way of promoting good health among the older generation."
